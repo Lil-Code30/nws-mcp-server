@@ -1,14 +1,22 @@
 {
-  "name": "mcp-weather-server_typscript",
+  "name": "unofficial-nmw-mcp-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "unofficial MCP Server base on the National Weather Service API",
+  "authors": [
+    {
+      "name": "Lil-Code30",
+      "github": "https://github.com/Lil-Code30"
+    }
+  ],
+  "main": "./build/index.js",
   "bin": {
-    "mcp-weather-server": "./build/index.js"
+    "nmw-mcp-weather-server": "./build/index.js"
   },
   "scripts": {
     "test": "tsc && chmod 755 build/index.js",
     "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
-    "start": "node build/index.js"
+    "start": "node build/index.js",
+    "release": "npm run build && git add . && git commit -m 'Release' && git push && npm publish"
   },
   "files": [
     "build"
