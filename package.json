@@ -1,6 +1,6 @@
 {
   "name": "unofficial-nmw-mcp-server",
-  "version": "1.0.1",
+  "version": "1.0.2-0",
   "description": "unofficial MCP Server base on the National Weather Service API",
   "main": "./build/index.js",
   "bin": {
