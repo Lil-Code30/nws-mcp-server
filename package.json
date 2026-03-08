@@ -10,7 +10,7 @@
     "test": "tsc && chmod 755 build/index.js",
     "build": "tsc && node -e \"require('fs').chmodSync('build/index.js', '755')\"",
     "start": "node build/index.js",
-    "release": "npm run build && git add . && git commit -m 'Release' && git push && npm publish"
+    "release": "release-it"
   },
   "files": [
     "build"
